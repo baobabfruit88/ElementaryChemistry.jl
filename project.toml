@@ -1,5 +1,11 @@
+[owner]
+name = "Baobab the fruit"
+
+[info]
 name = "Elementary Chemistry"
 keywords = ["Chemistry julia"]
 license = "MIT"
+
+[about]
 desc = "Elementary Chemistry laws and algorithms based on Holmyards Elementary Chemistry book"
 version = "0.0.1" 
