@@ -1,0 +1,5 @@
+name = "Elementary Chemistry"
+keywords = ["Chemistry julia"]
+license = "MIT"
+desc = "Elementary Chemistry laws and algorithms based on Holmyards Elementary Chemistry book"
+version = "0.0.1" 
