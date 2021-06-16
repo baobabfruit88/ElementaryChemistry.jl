@@ -1,2 +1,8 @@
 # chemistry.jl
-A set of various chemistry laws/algorithms
+An elementary introduction into chemistry,
+Based on "An Elementary Chemistry" By Eric John Holmyard.
+
+Starting with Gass Laws : 
+
+[x] Charles law 
+Boyles law
