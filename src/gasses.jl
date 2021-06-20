@@ -76,13 +76,12 @@ function gay_lussacs_law(pressure, temperature, newTemp, tempratureUnit)
 end
 
 """
-Avrogado's law states that under the same conditions of temprature and pressure
-equal volumes of different gasses have the same number of molecules. 
+Avrogado's law under the assumption of ideal gasses teaches us that
+    any gas, while having the same temprature, pressure and volume will have the 
+    same number of molecules. or : V1|N1 = V2|N2
 """
 function avogadros_law()
-    return "Avrogado's law under the assumption of ideal gasses teaches us that
-    any gas, while having the same temprature, pressure and volume will have the 
-    same number of molecules. or : V1|N1 = V2|N2"
+    return null
 end
 
 """
