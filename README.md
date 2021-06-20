@@ -7,7 +7,7 @@ Starting with Gass Laws :
 - [x] Charles law 
 - [x] Boyles law
 - [x] Gay Lussac's law
-- [ ] Avogadro's law
+- [x] Avogadro's law
 
 Extra Functionalities
 
