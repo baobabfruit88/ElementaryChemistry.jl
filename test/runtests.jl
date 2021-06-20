@@ -1,4 +1,4 @@
 using Test
-@testset "Temprature, Gas laws" begin
+@testset "Temperature, Gas laws" begin
     include("GassesTest.jl")
 end
