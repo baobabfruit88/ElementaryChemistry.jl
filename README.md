@@ -6,5 +6,10 @@ Starting with Gass Laws :
 
 - [x] Charles law 
 - [x] Boyles law
-- [ ] Gay Lussac's law
+- [x] Gay Lussac's law
 - [ ] Avogadro's law
+
+Extra Functionalities
+
+- [x] Temparture (C°/F°) to K° (absolute)
+- [ ] Converting pressure units (atm,mmhg, etc.)

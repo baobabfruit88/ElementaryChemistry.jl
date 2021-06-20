@@ -14,7 +14,7 @@ Calculate the new volume of a gas using Charles law
 curentvolume = Currrent c.c of gas
 currentTemperature = The Current temprature in either C or F
 newTemperature = Temprature the gas is being heated, or cooled to
-tempratureUnit = C or F for Centigrade and Farenheit respectively.
+tempratureUnit = (c)entigrade, (f)arenheit, or (a)bsolute
 """
 
 function charlesLaw(currentVolume,currentTemprature,newTemperature,tempratureUnit)
@@ -30,7 +30,7 @@ end
 When temperature remains contstant but pressure changes we can make use of
 Boyles law. Which simlpy states : New volume = old volume * old pressure devided by new pressure 
 
-currentPressure = The current pressure
+currentPressure = The current pressure in mm
 currentVolume = The current volume of the gass
 desiredPressure = The pressure we want to be at
 """
@@ -39,16 +39,38 @@ function boylesLaw(currentPressure, currentVolume,desiredPressure)
     newVolume = (currentVolume * currentPressure) / desiredPressure
     return newVolume
 end
+
+"""
+The pressure of a gass of fixed mass and fixed volume is directly 
+proprtional to the gas's absolute temprature.
+
+If a gas's temprature increases, so does its pressure if the mass and volume are 
+held constant.
+
+pressure = Current pressure in atm
+temperature = Current temperature of container
+newTemp = Temperature at which we want to know the pressure
+tempratureUnit = (c)entigrade, (f)arenheit, or (a)bsolute
+"""
+function gayLussacsLaw(pressure, temperature, newTemp, tempratureUnit)
+ newTemp = absoluteTemperature(newTemp,tempratureUnit)
+ temperature = absoluteTemperature(temperature,tempratureUnit)
+ newPressure = (pressure * newTemp) / temperature
+ return newPressure
+end
+
 """
 Converts farenheit or Centigrade to absolute temprature
-temp = temprature to Convert
-unit = F or C Farenheit or Centigrade respectively.
+temprature = temprature to Convert
+tempratureUnit = (c)entigrade, (f)arenheit, or (a)bsolute = (c)entigrade, (f)arenheit, or (a)bsolute
 """
-function absoluteTemperature(temp,unit)
-    if lowercase(unit) == "c"
-        return round(temp + 273)
-    elseif lowercase(unit) == "f"
-        return round((temp + 459) / 1.8)
+function absoluteTemperature(temprature,tempratureUnit)
+    if lowercase(tempratureUnit) == "c"
+        return round(temprature + 273)
+    elseif lowercase(tempratureUnit) == "f"
+        return round((temprature + 459) / 1.8)
+    elseif lowercase(tempratureUnit) == "a"
+        return temprature    
     end
 end
 
