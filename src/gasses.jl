@@ -17,7 +17,7 @@ newTemperature = Temprature the gas is being heated, or cooled to
 tempratureUnit = (c)entigrade, (f)arenheit, or (a)bsolute
 """
 
-function charlesLaw(currentVolume,currentTemprature,newTemperature,tempratureUnit)
+function charles_law(currentVolume,currentTemprature,newTemperature,tempratureUnit)
     newVolume = 0;
     currentTemprature = round(absoluteTemperature(currentTemprature,tempratureUnit))
     newTemperature = round(absoluteTemperature(newTemperature,tempratureUnit))
@@ -34,7 +34,7 @@ currentPressure = The current pressure in mm
 currentVolume = The current volume of the gass
 desiredPressure = The pressure we want to be at
 """
-function boylesLaw(currentPressure, currentVolume,desiredPressure)
+function boyles_law(currentPressure, currentVolume,desiredPressure)
     newVolume = 0;
     newVolume = (currentVolume * currentPressure) / desiredPressure
     return newVolume
@@ -52,7 +52,7 @@ temperature = Current temperature of container
 newTemp = Temperature at which we want to know the pressure
 tempratureUnit = (c)entigrade, (f)arenheit, or (a)bsolute
 """
-function gayLussacsLaw(pressure, temperature, newTemp, tempratureUnit)
+function gay_lussacs_law(pressure, temperature, newTemp, tempratureUnit)
  newTemp = absoluteTemperature(newTemp,tempratureUnit)
  temperature = absoluteTemperature(temperature,tempratureUnit)
  newPressure = (pressure * newTemp) / temperature
@@ -64,7 +64,7 @@ Converts farenheit or Centigrade to absolute temprature
 temprature = temprature to Convert
 tempratureUnit = (c)entigrade, (f)arenheit, or (a)bsolute = (c)entigrade, (f)arenheit, or (a)bsolute
 """
-function absoluteTemperature(temprature,tempratureUnit)
+function absolute_temperature(temprature,tempratureUnit)
     if lowercase(tempratureUnit) == "c"
         return round(temprature + 273)
     elseif lowercase(tempratureUnit) == "f"
