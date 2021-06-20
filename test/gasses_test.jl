@@ -1,6 +1,8 @@
 using Test
 
 include("../src/gasses.jl")
+include("../src/temprature_conversion.jl")
+
 @test 288 == absolute_temperature(15,"c")
 @test 288 == absolute_temperature(59,"f")
 @test 93 == charles_law(72,15,100,"c")

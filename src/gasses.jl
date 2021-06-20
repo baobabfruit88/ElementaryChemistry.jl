@@ -6,7 +6,7 @@ Charles, Boyles, Gay Lussacs and Avogadros laws
 
 """
 When pressure is constant we can use charles law
-Charles law states that volume expands or contracts 
+Charles law states that volume expands or contracts      
 Directly as temperature changes when pressure is constant 
 
 Calculate the new volume of a gas using Charles law 
@@ -84,18 +84,4 @@ function avogadros_law()
     return null
 end
 
-"""
-Converts Fahreneit or Centigrade to absolute temperature
-temperature = temperature to Convert
-temperatureUnit = (c)entigrade, (f)ahrenheit, or (a)bsolute = (c)entigrade, (f)ahrenheit, or (a)bsolute
-"""
-function absolute_temperature(temperature,temperatureUnit)
-    if lowercase(temperatureUnit) == "c"
-        return round(temperature + 273)
-    elseif lowercase(temperatureUnit) == "f"
-        return round((temperature + 459) / 1.8)
-    elseif lowercase(temperatureUnit) == "a"
-        return temperature    
-    end
-end
 
