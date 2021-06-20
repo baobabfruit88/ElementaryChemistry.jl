@@ -5,3 +5,5 @@ version = "0.1.0"
 keywords = ["Chemistry julia"]
 license = "MIT"
 description = "Elementary Chemistry laws and algorithms based on Holmyards Elementary Chemistry book"
+[compat]
+julia = "^1.6.1" 
