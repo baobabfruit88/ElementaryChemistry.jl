@@ -25,6 +25,20 @@ function charlesLaw(currentVolume,currentTemprature,newTemperature,tempratureUni
     return round(newVolume)
 end
 
+
+"""
+When temperature remains contstant but pressure changes we can make use of
+Boyles law. Which simlpy states : New volume = old volume * old pressure devided by new pressure 
+
+currentPressure = The current pressure
+currentVolume = The current volume of the gass
+desiredPressure = The pressure we want to be at
+"""
+function boylesLaw(currentPressure, currentVolume,desiredPressure)
+    newVolume = 0;
+    newVolume = (currentVolume * currentPressure) / desiredPressure
+    return newVolume
+end
 """
 Converts farenheit or Centigrade to absolute temprature
 temp = temprature to Convert
