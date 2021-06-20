@@ -1,4 +1,4 @@
-module elementaryChemistry
+module ElementaryChemistry
 
 include("Gasses.jl")
 include("conversions/TempratureConversion.jl")
