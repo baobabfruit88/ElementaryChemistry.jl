@@ -27,17 +27,33 @@ end
 
 
 """
-When temperature remains contstant but pressure changes we can make use of
-Boyles law. Which simlpy states : New volume = old volume * old pressure devided by new pressure 
+When temperature remains contstant but pressure changes we can calculate new volume by using
+Boyles law when solving for pressure. 
+Which simlpy states : New volume = old volume * old pressure devided by new pressure 
 
 currentPressure = The current pressure in mm
 currentVolume = The current volume of the gass
 desiredPressure = The pressure we want to be at
 """
-function boyles_law(currentPressure, currentVolume,desiredPressure)
+function boyles_law_solve_pressure(currentPressure, currentVolume,desiredPressure)
     newVolume = 0;
     newVolume = (currentVolume * currentPressure) / desiredPressure
     return newVolume
+end
+
+"""
+When temperature remains contstant but volume changes we can calculate new pressure by using
+Boyles law when solving for volume. 
+Which simlpy states : New pressure = old pressure * current volume devided by new volume 
+
+currentPressure = The current pressure in mm
+currentVolume = The current volume of the gass
+desiredVolume = The volume we want to have
+"""
+function boyles_law_solve_volume(currentPressure,currentVolume,desiredVolume)
+    newPressure = 0
+    newPressure = (currentPressure * currentVolume) / desiredVolume
+    return newPressure
 end
 
 """
