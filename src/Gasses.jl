@@ -5,26 +5,21 @@ Charles, Boyles, Gay Lussacs and Avogadros laws
 ```
 
 """
-When pressure is constant we can use charles law
-Charles law states that volume expands or contracts      
-Directly as temperature changes when pressure is constant 
-
-Calculate the new volume of a gas using Charles law 
+Calculate the volume by using charles law, stating that gas volume
+increases or decreases directly relative to change in temprature. 
 
 curentVolume = Curent c.c of gas
 curenttemperature = The Curent temperature in either C or F
 newtemperature = temperature the gas is being heated, or cooled to
 temperatureUnit = (c)entigrade, (f)ahrenheit, or (a)bsolute
 """
-
-function charles_law(curentVolume,curenttemperature,newtemperature,temperatureUnit)
+function charles_law(curentVolume, curenttemperature, newtemperature, temperatureUnit)
     newVolume = 0;
-    curenttemperature = round(absolute_temperature(curenttemperature,temperatureUnit))
-    newtemperature = round(absolute_temperature(newtemperature,temperatureUnit))
-    newVolume = curentVolume * (newtemperature/curenttemperature)
+    curenttemperature = round(absolute_temperature(curenttemperature, temperatureUnit))
+    newtemperature = round(absolute_temperature(newtemperature, temperatureUnit))
+    newVolume = curentVolume * (newtemperature / curenttemperature)
     return round(newVolume)
 end
-
 
 """
 When temperature remains contstant but pressure changes we can calculate new volume by using
@@ -35,7 +30,7 @@ curentPressure = The curent pressure in mm
 curentVolume = The curent volume of the gas
 desiredPressure = The pressure we want to be at
 """
-function boyles_law_solve_pressure(curentPressure, curentVolume,desiredPressure)
+function boyles_law_solve_pressure(curentPressure, curentVolume, desiredPressure)
     newVolume = 0;
     newVolume = (curentVolume * curentPressure) / desiredPressure
     return newVolume
@@ -50,7 +45,7 @@ curentPressure = The curent pressure in mm
 curentVolume = The curent volume of the gas
 desiredVolume = The volume we want to have
 """
-function boyles_law_solve_volume(curentPressure,curentVolume,desiredVolume)
+function boyles_law_solve_volume(curentPressure, curentVolume, desiredVolume)
     newPressure = 0
     newPressure = (curentPressure * curentVolume) / desiredVolume
     return newPressure
@@ -69,10 +64,10 @@ newTemp = temperature at which we want to know the pressure
 temperatureUnit = (c)entigrade, (f)ahrenheit, or (a)bsolute
 """
 function gay_lussacs_law(pressure, temperature, newTemp, temperatureUnit)
- newTemp = absolute_temperature(newTemp,temperatureUnit)
- temperature = absolute_temperature(temperature,temperatureUnit)
- newPressure = (pressure * newTemp) / temperature
- return newPressure
+    newTemp = absolute_temperature(newTemp, temperatureUnit)
+    temperature = absolute_temperature(temperature, temperatureUnit)
+    newPressure = (pressure * newTemp) / temperature
+    return newPressure
 end
 
 """
