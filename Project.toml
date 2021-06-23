@@ -1,7 +1,7 @@
 name = "ElementaryChemistry"
 uuid = "95ad8c96-4a8b-47ff-b6a3-cf0853d8b4d4"
 authors = ["baobabfruit88@gmail.com <baobabfruit88@gmail.com>"]
-version = "0.1.2"
+version = "0.1.1"
 keywords = ["Chemistry julia"]
 license = "MIT"
 description = "Elementary Chemistry laws and algorithms based on Holmyards Elementary Chemistry book"
