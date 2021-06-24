@@ -15,10 +15,10 @@ temperatureUnit = (c)entigrade, (f)ahrenheit, or (a)bsolute
 """
 function charles_law(curentVolume, curenttemperature, newtemperature, temperatureUnit)
     newVolume = 0;
-    curenttemperature = round(absolute_temperature(curenttemperature, temperatureUnit))
-    newtemperature = round(absolute_temperature(newtemperature, temperatureUnit))
+    curenttemperature = absolute_temperature(curenttemperature, temperatureUnit)
+    newtemperature = absolute_temperature(newtemperature, temperatureUnit)
     newVolume = curentVolume * (newtemperature / curenttemperature)
-    return round(newVolume)
+    return newVolume
 end
 
 """
@@ -90,5 +90,5 @@ using g/mol give the molar masses of both gasses.
 """
 function grahams_law_velocity_ratio(molar_mass_a,molar_mass_b)
         ratio = sqrt(molar_mass_a/molar_mass_b)
-    return round(ratio, digits = 3)
+    return ratio
 end
