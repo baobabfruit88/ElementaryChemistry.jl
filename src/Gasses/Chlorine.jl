@@ -8,13 +8,11 @@ Its made in a lab by heating Magnese dioxide and concentrated hydrochloric acid.
 Given that we use enough hydrochloric acid, 
 how much chlorine in Grams (default)  or (L)iters at ntp do we get from x grams of Magnese dioxide.
 """
-function magnese_dioxide_to_chlorine(magneseGrams,unit = nothing)
-    grams_of_chloride =  (magneseGrams/86.94) * 71 
-    liters_of_chloride = (grams_of_chloride/71) * 22.4
-    if unit == nothing
-        return grams_of_chloride
-    else
-        return liters_of_chloride
+function magnese_dioxide_to_chlorine(magneseGrams,unit = "grams")  
+    if lowercase(unit) == "grams"
+        return (magneseGrams/86.94) * 71 
+    elseif lowercase(unit) == "litre" || unit == "liter"
+        return (magneseGrams/86.94) * 22.4
     end    
 end
 
