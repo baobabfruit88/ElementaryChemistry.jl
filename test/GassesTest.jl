@@ -1,6 +1,6 @@
 using Test
 
-include("../src/Gasses.jl")
+include("../src/GassLaws.jl")
 include("../src/conversions/TempratureConversion.jl")
 
 @test 288 == absolute_temperature(15,"c")

@@ -1,6 +1,6 @@
 module ElementaryChemistry
 
-include("Gasses.jl")
+include("GassLaws.jl")
 include("conversions/TempratureConversion.jl")
 include("conversions/PressureConversion.jl")
 
