@@ -8,6 +8,7 @@ Starting with Gas Laws :
 - [x] Boyles law
 - [x] Gay Lussac's law
 - [x] Avogadro's law
+- [x] Grahams law
 
 Extra Functionalities
 
