@@ -10,6 +10,10 @@ Starting with Gas Laws :
 - [x] Avogadro's law
 - [x] Grahams law
 
+Specific Gasses : 
+- [ ] Chlorine - in development
+
+
 Extra Functionalities
 
 - [x] Temparture (C°/F°) to K° (absolute)
