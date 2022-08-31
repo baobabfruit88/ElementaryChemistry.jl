@@ -1,8 +1,8 @@
-    ```
+    """
     Chlorine, a gas first used by the Germans during the war, as it is an extremely irritating and poisonous gas.
     However, it can also sterilize germ-infected water, rendering it safe for consumption.
     It's made in a lab by heating Manganese dioxide and concentrated hydrochloric acid.
-    ```
+    """
 
     """
     Given that we use enough hydrochloric acid, 
